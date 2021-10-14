@@ -12,7 +12,7 @@
     height: 100px;
     background: red;
 }
-.ex-2-square: {
+.ex-2-square:active {
     width: 400px;
     transition: ease 4s;
     
@@ -22,10 +22,18 @@
     height: 100px;
     background: red;
 }
+.ex-3-square:hover{
+    transition: ease 3s;
+    border-radius: 50%;
+}
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+}
+.ex-4-square:hover {
+    background: white;
+    transition: ease 4s;
 }
 .ex-5-square {
     margin: 20px;
@@ -33,20 +41,80 @@
     height: 60px;
     background: red;
 }
+.ex-5-square:hover{
+    margin: 0px;
+    width: 100px;
+    height:100px;
+    transition: ease 3s;
+}
+.ex-5-square:active{
+    margin: 40px;
+    width: 20px;
+    height:20px;
+    transition: ease 3s;
+}
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
+}
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+.ex-7-img:hover{
+    filter:hue-rotate(90deg);
+    transition: ease 4s;
+    width:110%;
+}
+.ex-8-img:hover{
+    border-radius: 20px;
+    transition: ease 4s;
+    margin:10px;
+    width:20%;
+    filter:sepia(1)
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+.ex-9-img:hover {
+    margin: 0px 0px;
+    width: 500px;
+    border-radius: 20px;
+    transition: ease 4s;
+    filter:hue-rotate(120deg);
+    filter: grayscale(0.7);
+
+}
 .ex-10-icon {
     font-size: 60px;
 }
+.ex-10-icon:hover{
+    transform:rotate (90deg);
+    /* animation-name: routa;
+    animation-duration:  5s; */
+}
+@keyframes ruota {
+    0%{
+        transform:rotate (0deg);
+    }
+    25%{
+        transform:rotate (90deg);
+    }
+    50%{
+        transform:rotate (180deg);
+    }
+    75%{
+    
+        transform:rotate (270deg);
+    }
+    
+}
 .ex-11-icon {
     font-size: 60px;
+
 }
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
