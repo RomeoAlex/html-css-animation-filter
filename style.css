@@ -89,10 +89,11 @@
 .ex-10-icon {
     font-size: 60px;
 }
-.ex-10-icon:hover{
-    transform:rotate (90deg);
+.ex-10-icon:active{
+    /* transform:rotate (90deg); */
     /* animation-name: routa;
     animation-duration:  5s; */
+    transform: rotate(60);
 }
 @keyframes ruota {
     0%{
